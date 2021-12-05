@@ -12,7 +12,7 @@ cities.forEach(function(city) {
   console.log(city)
  });
 
- // Loop through the cities array and create one marker for each city.
+ // Loop through the cities array and create one marker for each city(use forEach methhod)
 cityData.forEach(function(city) {
   console.log(city)
   L.circleMarker(city.location, {
