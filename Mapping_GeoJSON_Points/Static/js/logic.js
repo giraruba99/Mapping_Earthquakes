@@ -1,12 +1,11 @@
 // Add console.log to check to see if our code is working.
 console.log("working");
 
-
 // Create the map object with center at the San Francisco airport.
 let map = L.map('mapid').setView([37.5, -122.5], 10);
 
 
-// Add GeoJSON data, example SanFranAirport
+// Add GeoJSON data.
 let sanFranAirport =
 {"type":"FeatureCollection","features":[{
     "type":"Feature",
@@ -26,15 +25,21 @@ let sanFranAirport =
             "coordinates":[-122.375,37.61899948120117]}}
 ]};
 
-
 // Grabbing our GeoJSON data.
 L.geoJSON(sanFranAirport, {
+  // We turn each feature into a marker on the map.
   onEachFeature: function(feature, layer) {
     console.log(layer);
     layer.bindPopup();
-   }
+    
+  }
+
 }).addTo(map);
-// // Coordinates for each point to be used in the polyline.
+
+// Create the map object with a center and zoom level.
+// Create the map object with center at the San Francisco airport.
+// let map = L.map('mapid').setView([37.6213, -122.3790], 5);
+// Coordinates for each point to be used in the polyline.
 // let line = [
 //   [33.9416, -118.4085],
 //   [37.6213, -122.3790],
@@ -42,20 +47,20 @@ L.geoJSON(sanFranAirport, {
 //   [47.4502, -122.3088]
 // ];
 
-// // Create a polyline using the line coordinates and make the line red.
+// Create a polyline using the line coordinates and make the line red.
 // L.polyline(line, {
 //   color: "yellow"
 // }).addTo(map);
 
-// // Get data from cities.js
+// Get data from cities.js
 // let cityData = cities;
 
-// // Loop through the cities array and create one marker for each city.
+// Loop through the cities array and create one marker for each city.
 // cities.forEach(function(city) {
 //   console.log(city)
 //  });
 
-//  // Loop through the cities array and create one marker for each city(use forEach methhod)
+//  Loop through the cities array and create one marker for each city(use forEach methhod)
 // cityData.forEach(function(city) {
 //   console.log(city)
 //   L.circleMarker(city.location, {
