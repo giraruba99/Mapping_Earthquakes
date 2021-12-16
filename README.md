@@ -1,7 +1,8 @@
 # Mapping_Earthquakes
-This project is both challenging and rewarding. It involved so many moving parts like a puzzle, and we did complete project by reflecting major tectonic activities on a map.
+This project is both challenging and rewarding. It involved so many moving parts like a puzzle, and we did complete this project by reflecting major tectonic activities on a map.
 
 ## Purpose of the project
+
 * The main purpose of this project can be summarized as:
   - To be able to display tectonic activities like earthquakes on geographical map.
   - To display our data on different map styles:- street, satellite or dark.
@@ -9,6 +10,7 @@ This project is both challenging and rewarding. It involved so many moving parts
   - To display the tectonic plates around the world.
 
 ## Result and Analysis
+
 * Adding tectonic Plates:
   - Once we add our JS script to our `challenge_logic.js`, we were able to show all the tectonic plates of our world
    
